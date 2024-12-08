@@ -1,0 +1,48 @@
+body {
+  margin: 20px;
+  padding: 20px;
+  background-color: #1e1e2e;
+  border: solid #313244;
+}
+
+p {
+  color: #cdd6f4;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+}
+
+h1 {
+  color: #cdd6f4;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+}
+
+h4 {
+  color: #a6adc8;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+}
+
+a {
+  color: #89b4fa;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+}
+
+hr {
+  color: #313244;
+}
+
+img {
+  border: solid #313244;
+}
+
+#nerd1 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
