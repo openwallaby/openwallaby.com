@@ -3,6 +3,7 @@ body {
   padding: 20px;
   background-color: #1e1e2e;
   border: solid #313244;
+  border-width: 0.5vh;
 }
 
 p {
@@ -31,14 +32,14 @@ a {
 
 hr {
   color: #313244;
+  background-color: #313244;
+  height: 0.5vh;
+  border-style: none;
 }
 
 img {
   border: solid #313244;
-}
-
-#nerd1 {
-  float: right;
+  border-width: 0.5vh;
 }
 
 .clearfix::after {
@@ -81,4 +82,9 @@ ul.nav {
 li a.current-page {
   background-color: #b4befe;
   color: #313244;
+}
+
+@media screen and (max-width: 600px) {
+  ul.nav li.right, 
+  ul.nav li {float: none;}
 }
