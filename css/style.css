@@ -46,3 +46,39 @@ img {
   clear: both;
   display: table;
 }
+
+ul {
+  color: #cdd6f4;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1e1e2e;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: #7f849c;
+  text-align: center;
+  padding: 8px 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav li a:hover:not(.current-page) {
+  color: #cdd6f4;
+}
+
+li a.current-page {
+  background-color: #b4befe;
+  color: #313244;
+}
