@@ -1,0 +1,9 @@
+name: openwallabydotcom
+
+services:
+  zola:
+    image: ghcr.io/getzola/zola:v0.19.2
+    container_name: "zola"
+    command: zola --config /openwallaby.com/config/zola.toml --root /openwallaby.com/ build --output-dir /openwallaby.com/public/ --force
+    volumes: 
+      - .:/openwallaby.com/
