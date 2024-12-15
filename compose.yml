@@ -11,9 +11,9 @@ services:
     environment:
       - SERVER_ROOT=/var/public
       - SERVER_CONFIG_FILE=/etc/config.toml
-      - SERVER_HTTP2_TLS_CERT=/etc/certs/fullchain.pem
-      - SERVER_HTTP2_TLS_KEY=/etc/certs/privkey.pem
+      - SERVER_HTTP2_TLS_CERT=/etc/letsencrypt/live/openwallaby.com/fullchain.pem
+      - SERVER_HTTP2_TLS_KEY=/etc/letsencrypt/live/openwallaby.com/privkey.pem
     volumes:
       - ./public:/var/public
       - ./config/sws.toml:/etc/config.toml
-      - /etc/letsencrypt/live/openwallaby.com/:/etc/certs
+      - /etc/letsencrypt/live/openwallaby.com/:/etc/letsencrypt/live/openwallaby.com/
