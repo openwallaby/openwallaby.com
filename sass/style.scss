@@ -3,8 +3,8 @@ body {
   border-style: solid;
   border-color: #313244;
   border-width: 0.5vh;
-  padding: 3vh;
-  margin: 3vh;
+  padding: 1.5vw;
+  margin: 1.5vw;
 }
 
 p {
@@ -13,7 +13,9 @@ p {
   color: #cdd6f4;
 }
 
-li::marker {
+li {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
   color: #cdd6f4;
 }
 
@@ -22,6 +24,11 @@ a {
   font-weight: 600;
   color: #89b4fa;
   text-decoration-thickness: 2px;
+}
+
+a:hover {
+  background-color: #b4befe;
+  color: #181825;
 }
 
 img {
@@ -73,4 +80,31 @@ h3 {
   font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   color: #45475a;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar .current-page {
+  color: #181825;
+  background-color: #b4befe;
+}
+
+.navbar li a {
+  display: block;
+  padding: 8px;
+  background-color: #1e1e2e;
+  color: #45475a;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.current-page) {
+  color: #cdd6f4;
 }
