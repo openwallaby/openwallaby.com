@@ -1,8 +1,8 @@
 [general]
 
 #### Address & Root dir
-host = "192.168.0.127"
-port = 80
+host = "127.0.0.1"
+port = 443
 root = "/var/public"
 
 #### Logging
