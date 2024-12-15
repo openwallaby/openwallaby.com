@@ -1,7 +1,7 @@
 [general]
 
 #### Address & Root dir
-host = "https://openwallaby.com"
+host = "::"
 port = 80
 root = "./public"
 
