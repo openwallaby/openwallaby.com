@@ -108,3 +108,7 @@ h3 {
 .navbar li a:hover:not(.current-page) {
   color: #cdd6f4;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar li {float: none;}
+}
