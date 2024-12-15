@@ -14,4 +14,4 @@ services:
     volumes:
       - ./public:/var/public
       - ./config/sws.toml:/etc/config.toml
-      - /etc/letsencrypt/live/openwallaby.com/:/certs/
+      - /etc/letsencrypt/live/openwallaby.com/:/etc/certs

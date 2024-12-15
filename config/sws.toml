@@ -22,8 +22,8 @@ page50x = "./50x.html"
 
 #### HTTP/2 + TLS
 http2 = true
-http2-tls-cert = "/certs/fullchain.pem"
-http2-tls-key = "/certs/privkey.pem"
+http2-tls-cert = "/etc/certs/fullchain.pem"
+http2-tls-key = "/etc/certs/privkey.pem"
 https-redirect = true
 https-redirect-host = "localhost"
 https-redirect-from-port = 80
