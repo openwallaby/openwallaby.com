@@ -1,9 +1,17 @@
 name: openwallabydotcom
 
 services:
-  zola:
-    image: ghcr.io/getzola/zola:v0.19.2
-    container_name: "zola"
-    command: zola --config /openwallaby.com/config/zola.toml --root /openwallaby.com/ build --output-dir /openwallaby.com/public/ --force
-    volumes: 
-      - .:/openwallaby.com/
+  webserver:
+    image: joseluisq/static-web-server:2-alpine
+    container_name: "webserver"
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped
+    environment:
+      - SERVER_ROOT=/var/public
+      - SERVER_CONFIG_FILE=/etc/config.toml
+    volumes:
+      - ./public:/var/public
+      - ./config/sws.toml:/etc/config.toml
+      - /etc/letsencrypt/live/openwallaby.com/:/certs/
