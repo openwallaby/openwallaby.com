@@ -19,17 +19,17 @@ li {
   color: #cdd6f4;
 }
 
+a:hover {
+  background-color: #b4befe;
+  color: #181825;
+  text-decoration-style: none;
+}
+
 a {
   font-family: "JetBrains Mono", monospace;
   font-weight: 600;
   color: #89b4fa;
   text-decoration-thickness: 2px;
-}
-
-a:hover {
-  background-color: #b4befe;
-  color: #181825;
-  text-decoration-style: none;
 }
 
 img {
