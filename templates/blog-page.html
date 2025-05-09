@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block main %}
+<header>
+  <ul class="navbar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul><br><br>
+  <hr>
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+  <p class="subtitle"><strong>{{ page.date }}</strong></p>
+</header>
+<hr>
+<main>{{ page.content | safe }}</main>
+{% endblock main %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main %}
+<header>
+  <ul class="navbar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a class="current-page" href="/blog/">Blog</a></li>
+    <li><a href="/todo/">To Do</a></li>
+  </ul><br><br>
+  <hr>
+  <h1 class="title">
+    {{ section.title }}
+  </h1>
+</header>
+<hr>
+<main>
+  <ul>
+    {% for page in section.pages %}
+    <li><a href="{{ page.permalink | safe}}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+</main>
+{% endblock main %}
